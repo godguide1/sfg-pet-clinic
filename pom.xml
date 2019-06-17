@@ -46,5 +46,6 @@
     <scm>
         <developerConnection>scm:git:git@github.com:godguide1/sfg-pet-clinic.git</developerConnection>
       <tag>HEAD</tag>
+
   </scm>
 </project>
