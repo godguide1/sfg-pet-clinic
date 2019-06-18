@@ -1,14 +1,14 @@
 package services.map;
 
 import guru.springframework.sfgpetclinic.model.Owner;
-import services.CrudService;
+import services.OwnerService;
 
 import java.util.Set;
 
 /**
  * Created by Adetola on 18/06/2019
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Set<Owner> findAll() {
@@ -33,5 +33,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
     @Override
     public void deleteById(Long id) {
         super.deleteById(id);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
