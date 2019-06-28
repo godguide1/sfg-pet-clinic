@@ -48,9 +48,9 @@ public class Owner extends Person {
      * @param name to test
      * @return true if pet name is already in use
      */
-    /*public Pet getPet(String name) {
+    public Pet getPet(String name) {
         return getPet(name, false);
-    }*/
+    }
 
     /**
      * Return the Pet with the given name, or null if none found for this Owner.
@@ -58,7 +58,7 @@ public class Owner extends Person {
      * @param name to test
      * @return true if pet name is already in use
      */
-    /*public Pet getPet(String name, boolean ignoreNew) {
+    public Pet getPet(String name, boolean ignoreNew) {
         name = name.toLowerCase();
         for (Pet pet : pets) {
             if (!ignoreNew || !pet.isNew()) {
@@ -70,7 +70,7 @@ public class Owner extends Person {
             }
         }
         return null;
-    }*/
+    }
 
 
 }
